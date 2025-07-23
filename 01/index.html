@@ -10,96 +10,117 @@
     </head>
     
     <body>
-        <h1>Hello World!</h1>
-        <hr>
+        <header>
+            <h1>Hello World!</h1>
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a>
+                    </li>
+                    <li>
+                        <a href="#vacation">Planning a Vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learning HTML</a>
-                </li>
-                <li>
-                    <a href="#vacation">Planning a Vacation</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section id="html">
-            <h2>Learning Html</h2>
-            <p>This is my first web page</p>
-            <img src="img/html_logo_300x300.png" alt="HTML 5 Logo" title="I am learning html 5" width="100" height="100">
-            <figure>
-                <figcaption>
-                    An example of html 5 code
-                </figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello world!&lt;/h1&gt;</code>
-                </p>
-            </figure>
-            <h3>My daily schedule</h3>
-            <p>Let me tell you how?
-                <ol>
-                <li>....I learn more about web dev</li>
-                <li>....I plan out my schedule</li>
-                <li>....I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a></abbr></li>
-                </ol>
-            
-            </p>
-        </section>
         <hr>
-        
-        
-        <section id="vacation">
-            <h2>I am also planning vacation</h2>
-            <p>I've beeen working hard and <em>really need a getaway.</em></p>
-            <p>I live in <abbr title="Kansas">KS</abbr> i want to visit a beach.</p>
-            
-            <h3>Places i'd like to visit.</h3>
-            <ul>
-                <li>I've heard good things about the carribean.</li>
-                <figure>
-                    <img src="img/caribbean.jpg" alt="Carribean beach" title="I want to visit a carribean beach" width="400" height="255" loading="lazy">
-                    <figcaption>
-                        Carribean beach getaway
-                    </figcaption>
-                </figure>
-                
-                <li>
-                    <p>I've heard good things about going here: </p>
-                    <address>
-                        Margativlle Island<br>
-                        Dayton<br>
-                        Ohio, 45429<br>
-                    </address>
+        <main>
+            <article id="html">
+                <h2>Learning Html</h2>
+                <p>This is my first web page</p>
+                <section>
+                    <h3>HTML 5</h3>
+                    <img src="img/html_logo_300x300.png" alt="HTML 5 Logo" title="I am learning html 5" width="100" height="100">
                     <figure>
-                        <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock somewhere" loading="lazy" width="400" height="267">         
-                    </figure>  
-                </li>
-            </ul>
-        
-
-            <!--TODO: Add more places here-->
-            <h3>Place i want to avoid</h3>
-            <dl>
-                <dt>North pole</dt>
-                <dd>I hear this is <strong>cold</strong>!</dd>
+                        <figcaption>
+                            An example of html 5 code
+                        </figcaption>
+                        <p>
+                            <code>&lt;h1&gt;Hello world!&lt;/h1&gt;</code>
+                        </p>
+                    </figure>
+                </section>
+                <section>
+                    <h3>My daily schedule</h3>
+                    <p>Let me tell you how?
+                        <ol>
+                            <li>....I learn more about web dev</li>
+                            <li>....I plan out my schedule</li>
+                            <li>....I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a></abbr></li>
+                        </ol>
+                        <aside>
+                            <details>
+                                <summary>
+                                    Guess the <mark> number of hours</mark> i code per day?
+                                </summary>
+                                <p>I start at <time datetime="08:00">8 am</time> and i write code for <time datetime="PT3H">3</time> hours every morning</p>
+                            </details>
+                        </aside>
+                    </p>
+                </section>
+            </article>
+            <hr>
+            
+            
+            <article id="vacation">
+                <h2>I am also planning vacation</h2>
+                <p>I've beeen working hard and <em>really need a getaway.</em></p>
+                <p>I live in <abbr title="Kansas">KS</abbr> i want to visit a beach.</p>
                 
-                <dt>South poles</dt>ff
-                <dd>This is also cold</dd>
+                <section>
+                    <h3>Places i'd like to visit.</h3>
+                    <ul>
+                        <li>I've heard good things about the carribean.</li>
+                        <figure>
+                            <img src="img/caribbean.jpg" alt="Carribean beach" title="I want to visit a carribean beach" width="400" height="255" loading="lazy">
+                            <figcaption>
+                                Carribean beach getaway
+                            </figcaption>
+                        </figure>
+                        
+                        <li>
+                            <p>I've heard good things about going here: </p>
+                            <address>
+                                Margativlle Island<br>
+                                Dayton<br>
+                                Ohio, 45429<br>
+                            </address>
+                            <figure>
+                                <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock somewhere" loading="lazy" width="400" height="267">         
+                            </figure>  
+                        </li>
+                    </ul>
+                </section>
 
-                <dt>Mountain Tops</dt>
-                <dd>It freaking cold</dd>
-            </dl>
-            <p>Anywhere <strong>cold</strong>, <i>no way..</i></p>
-        </section>
+                <section>
+                    <!--TODO: Add more places here-->
+                    <h3>Place i want to avoid</h3>
+                    <dl>
+                        <dt>North pole</dt>
+                        <dd>I hear this is <strong>cold</strong>!</dd>
+                        
+                        <dt>South poles</dt>ff
+                        <dd>This is also cold</dd>
 
+                        <dt>Mountain Tops</dt>
+                        <dd>It freaking cold</dd>
+                    </dl>
+                    <p>Anywhere <strong>cold</strong>, <i>no way..</i></p>
+                </section>
+            </article>
+        </main> 
         <hr>
-        &lt;&lt;&lt; &copy; <a href="about.html">Naveen</a> &gt;&gt;&gt;
         
-        <p>
-            <a href="#">Back to TOP</a>
-        </p>
-
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Naveen</a> &gt;&gt;&gt;
+            </p>
+           
+            <p>
+                <a href="#">Back to TOP</a>
+            </p>
+        </footer>
 
     </body>
     
