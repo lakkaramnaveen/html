@@ -29,43 +29,49 @@
     <main>
       <section>
         <h2>Our Contact Form</h2>
-        <form action="https://httpbin.org/post">
-          <p>
-            <label for="fullName">Name:</label>
-            <input
-              type="text"
-              name="fullName"
-              id="fullName"
-              autocomplete="on"
-              placeholder="your name"
-            />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="your email"
-            />
-          </p>
-          <p>
-            <label for="message">Your Message:</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Type your message here"
-            ></textarea>
-          </p>
-          <button
-            type="submit"
-            formaction="https://httpbin.org/post"
-            formmethod="post"
-          >
-            Send
-          </button>
-          <button type="reset">Reset</button>
-        </form>
+        <fieldset style="border: 1px solid">
+          <legend style="font-size: 1.25rem">Send Us A Message</legend>
+          <form id="form" action="https://httpbin.org/post">
+            <p>
+              <label for="fullName">Name:</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                autocomplete="on"
+                placeholder="your name"
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+              />
+            </p>
+            <p>
+              <label for="message">Your Message:</label>
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message here"
+                style="width: 208px; height: 180px"
+              ></textarea>
+            </p>
+            <button
+              type="submit"
+              formaction="https://httpbin.org/post"
+              formmethod="post"
+            >
+              Send
+            </button>
+            <button type="reset">Reset</button>
+          </form>
+        </fieldset>
+
         <h2>Our Location</h2>
         <address>
           <p>
