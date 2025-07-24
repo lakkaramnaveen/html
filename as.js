@@ -4,6 +4,7 @@ async function main() {
   await new Promise((resolve) => {
     setTimeout(() => {
       console.log("B");
+      resolve();
     });
   });
   console.log("C");
