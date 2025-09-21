@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nani" />
     <meta name="description" content="This is a taco shop website" />
     <link rel="stylesheet" href="css/style.css" />
@@ -9,31 +10,34 @@
     <link rel="icon" href="img/favicon.ico" type="image" />
   </head>
   <body id="body">
-    <header>
-      <h1 id="heading">Welcome to The Little Taco Shop</h1>
-      <nav>
-        <ul>
+    <header class="header">
+      <h1 class="header__h1" id="heading">Little Taco Shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
-            <a href="#about">About <abbr title="Little Taco Shop">LTS</abbr></a>
+            <a href="about.html">About</a>
           </li>
-          <li><a href="#menu">Our Menu</a></li>
-          <li><a href="hours.html">Store Hours</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__h2">Bienvenidos!</h2>
       <figure>
         <img
           src="img/3.jpg"
           alt="Home image of tacos"
           title="Taco with a drink image"
-          width="400"
-          height="300"
+          width="1000"
+          height="667"
         />
-        <figcaption>Tacos and a Drink</figcaption>
+        <figcaption class="offscreen">Tacos and a Drink</figcaption>
       </figure>
-    </header>
+    </section>
 
-    <hr />
     <main>
       <h2 id="about">About <abbr title="Little Taco Shop">LTS</abbr></h2>
       <p>
@@ -105,7 +109,7 @@
 
     <hr />
     <footer>
-      <p>Copyright &copy; The Little Taco Shop</p>
+      <p><span>Copyright &copy; </span><span>Little Taco Shop</span></p>
     </footer>
   </body>
 </html>
