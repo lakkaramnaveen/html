@@ -169,7 +169,7 @@ a:active {
   position: absolute;
   top: -100px;
   left: 20px;
-  animation: showWelcome 0.5s ease-in-out 1 forwards;
+  animation: showWelcome 0.5s ease-in-out 1s forwards;
 }
 
 @keyframes showWelcome {
